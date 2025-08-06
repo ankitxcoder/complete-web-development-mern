@@ -13,7 +13,7 @@
 - CDN link Css
 - cdn -> content  delivery network
 ## Note
-- <link /> me jo bhe phly aayega oo over ride krega dushre wale ko 
+- link  me jo bhe phly aayega oo over ride krega dushre wale ko 
 - - -
 ## Cover 
 - Componenet - pre built item eg-> button
