@@ -37,7 +37,7 @@
 
 - ## Alert
 - pop op 
-- div with class aert and (--> this is color of alert pop op)
+- div with class alert and (--> this is color of alert pop op)
 - Icon can be use in alert
 - dimisible
 
