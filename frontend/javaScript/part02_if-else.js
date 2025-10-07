@@ -16,7 +16,7 @@ if(a=10)
     console.log("its 10 in first if");
 
 }
-console.log("code in between two if");
+console.log("code in between two  if");
 if(a<10)
 {
     console.log("2nd if run after another code in bewteen code ");
