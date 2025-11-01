@@ -33,6 +33,7 @@ const post={
 console.log(post);
 
 // Get Value
+console.log("------------------------------get Value --------------------------------")
 console.log("Getting value : "+post['userName']);
 console.log(post.tag);
 

@@ -7,7 +7,7 @@
 - ;(semicon tell js that line ends here)
 -------------------------------------------------------------------------------------------
 # Template iterals
-- ` `    ---> they are backticks
+- (` `)    ---> they are backticks
 - backticks are --> used as strings but here can write many strings in single backticks 
 
 - ${ expression }   --> - they are used to add embedded expessions in a string 
