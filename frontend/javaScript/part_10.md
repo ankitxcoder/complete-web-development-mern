@@ -189,8 +189,9 @@
   let user = docement.querySelector("#user");
   user.addEventListener("change", function(){ console.log(this.value);});
 
-#### input event
 
+
+#### input event
 - it track when the value of an <input>, <select>, or <textarea> elemnts has been changed
 - chota chota changes ko track krta hai
 - a input me th track kr dega like this
