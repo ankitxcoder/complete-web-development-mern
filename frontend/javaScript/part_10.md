@@ -194,6 +194,16 @@
 - it track when the value of an <input>, <select>, or <textarea> elemnts has been changed
 - chota chota changes ko track krta hai
 - a input me th track kr dega like this
-- Eg;
-  let user = docement.querySelector("#user");
+-  Eg;
+    let user = docement.querySelector("#user");
   user.addEventListener("input", function(){ console.log(this.value);}); --> this.value ke jgh user.value bhe ho skta hai
+
+
+# Event Bubbling 
+#### event.stopPropagation();
+- bht sare event ho -->
+- div pr event listner ho
+- div ke andar li me event set ho
+- ==> th jb andar li pr clcik krengye th automaiclly div ka bhe event trigger hoga -==> to stop it we use ( event.stopPropagation(); )
+
+
