@@ -207,3 +207,13 @@
 - ==> th jb andar li pr clcik krengye th automaiclly div ka bhe event trigger hoga -==> to stop it we use ( event.stopPropagation(); )
 
 
+
+# Event Delegation
+- Problem :-
+- old element --> pr event listener hai === pr
+- jb new element bnega th old wala event listner new element pr ni lgegea
+- this problem solve by event delegation 
+- Solution :-
+- apply eevent listner at parrent of elemnt 
+- to know in parrent which one triggered or clicked
+- then use   event.target.nodeName  --> this will tell it either rbutton or list ( see cpde in miniproject  TOdo App )
