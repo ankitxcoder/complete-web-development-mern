@@ -216,4 +216,4 @@
 - Solution :-
 - apply eevent listner at parrent of elemnt 
 - to know in parrent which one triggered or clicked
-- then use   event.target.nodeName  --> this will tell it either rbutton or list ( see cpde in miniproject  TOdo App )
+- then use   event.target.nodeName  --> this will tell it either rbutton or list items clciked ( see cpde in miniproject  TOdo App )

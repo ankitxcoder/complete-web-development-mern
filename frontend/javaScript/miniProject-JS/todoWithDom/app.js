@@ -44,3 +44,48 @@ btn.addEventListener("click", function()
     // }
     
 });
+
+
+// ------------------------------------------------- Part_11 CODE -------------------
+// changing Color of h1 ---> Callback HEll
+let h1= document.querySelector("h1");
+function changeColor(color,delay,nextColorChange){
+  setTimeout( ()=> {
+    h1.style.color=color;
+    if(nextColorChange) nextColorChange();   //--> If nextColorChange is defined (not null or undefined), then call it
+  },delay);
+}
+
+changeColor("red",2000, ()=>{
+             changeColor("green",2000,()=>{
+              changeColor("orange",2000,()=>{
+                changeColor("blue",2000)
+              });
+             });
+            });
+
+
+
+
+  function saveToDb(data){
+    return new Promise( (resolve,reject)=>{
+        let internetSpeeed= Math.floor(Math.random()*10)+1;
+        if( internetSpeeed>4 ){
+            resolve("success: data saved ");
+        }else {
+            reject("failure : weak conection");
+        }
+    });
+}
+
+// saveToDb("ankit")
+// .
+
+// ---------------------------------------then() & catch()-------------
+saveToDb("Hello man")
+    .then( ()=> {
+        console.log("promises was resolved");
+    })
+    .catch( ()=> {
+        console.log("promises was rejected");
+    });
