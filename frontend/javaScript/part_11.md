@@ -107,4 +107,80 @@ changeColor("red",2000, ()=>{
 
 
 # Promise chaining 
-- 
+- saveToDb("data")
+       .then( ()=> {
+          console.log("data 1 saved ");
+          return saveToDb("Hello world");
+       })
+       .then( ()=>{
+          console.log("data 2 saved");
+          return saveToDb("3rd data");
+       })
+       .then( ()=> {
+          console.log("dtaa 3 saved");
+       })
+       .catch( ()=> {
+          console.log("promises was rejected");
+       });
+
+- here .then() --> multiple time like --> try()
+- here .catch()  --> will write only one time --> like Catch()  --> catch all error occurs from any promises
+
+
+# Results & Errors in Promises
+- result is argument pass to --> then()  method 
+- error is argumnet pass to --> catch() method
+- saveToDb("data")
+       .then( (result)=> {         ------------- result is argumnet
+          console.log("data 1 saved ");
+          console.log("result of promises",result);   ----> result is printing 
+          return saveToDb("Hello world");
+       })
+       .then( (result)=>{
+          console.log("data 2 saved");
+          console.log("result of promises", result);
+          return saveToDb("3rd data");
+       })
+       .then( (result)=> {
+          console.log("dtaa 3 saved");
+          console.log("result of promises", result);
+       })
+       .catch( (error)=> {           ---------------------- error is argument 
+          console.log("promises was rejected");
+          console.log("error promises", error);   ---> error is printing 
+       });
+
+
+
+# Refactoring Old Code 
+- function changeColor( color, delay ){
+    return new Promise( (resolve,reject)=> 
+      {
+           setTimeout( ()=>
+           {
+            h1.style.color=color;
+            resolve("color change");
+           },delay);
+       });
+}
+
+   changeColor("red",2000)
+       .then( 
+        ()=> {
+        console.log("red color was completed");
+        return changeColor("orage",2000);
+             }
+          )
+          .then( ()=>{
+            console.log("orange color was completed");
+            return changeColor("blue",2000);
+                     }
+          )
+          .then( ()=> {
+            console.log("blue was completed");
+            ret
+          });
+
+- this change color code --> done from Promises ( enhance code ) 
+
+

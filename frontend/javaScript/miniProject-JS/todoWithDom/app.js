@@ -82,10 +82,47 @@ changeColor("red",2000, ()=>{
 // .
 
 // ---------------------------------------then() & catch()-------------
-saveToDb("Hello man")
-    .then( ()=> {
-        console.log("promises was resolved");
+// saveToDb("Hello man")
+//     .then( ()=> {
+//         console.log("promises was resolved");
+//     })
+//     .catch( ()=> {
+//         console.log("promises was rejected");
+//     });
+
+
+// ----------------------------------- Promises chaining --------------
+saveToDb("data")
+       .then( ()=> {
+          console.log("data 1 saved ");
+          return saveToDb("Hello world");
+       })
+       .then( ()=>{
+          console.log("data 2 saved");
+          return saveToDb("3rd data");
+       })
+       .then( ()=> {
+          console.log("dtaa 3 saved");
+       })
+       .catch( ()=> {
+          console.log("promises was rejected");
+       });
+
+
+      
+  //------------------------------------- async Keyword ------------------
+  async function greet()
+         {
+            throw "there is an error";
+            return "greet hellow";
+            
+         }
+
+  greet()
+    .then( (result)=> {
+      console.log("greet promise was resolved");
+      console.log("greet result is : ", result);
     })
-    .catch( ()=> {
-        console.log("promises was rejected");
+    .catch( (err)=>{
+      console.log("greet promises was rejected with err: ", err);  // err is there is an error 
     });
