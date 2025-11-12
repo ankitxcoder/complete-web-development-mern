@@ -126,3 +126,22 @@ saveToDb("data")
     .catch( (err)=>{
       console.log("greet promises was rejected with err: ", err);  // err is there is an error 
     });
+
+
+//-----------------------------------------------await keyword ---------------------------
+     function getNum() {
+          return new Promise((resolve,reject)=>{
+            setTimeout( ()=> {
+              let num=Math.floor(Math.random()*10)+1;
+              console.log(num);
+              resolve();
+            },1000);
+          });
+         }
+
+         async function demo(){
+           await getNum();  // ---> await inside the async fucntion
+           await getNum();   //  --> jbtk ye function execute ( resolve() ) ni hoga tbtk next function execution start ni hoga
+           await getNum();
+           await getNum();
+         }
