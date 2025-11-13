@@ -87,3 +87,65 @@
 
 
 
+# API 
+- Application programming interface
+- simple its waiter or url( end point ) which return json data or data 
+
+#### Accessing Some API
+- https://bored-api.appbrewery.com/random
+- catfact.ninja
+
+# JSON
+- JSON is the string FORMAT
+- JavaScript Object Notataion 
+- keys are String 
+- there is no undefined data 
+- json validator ---> json format is valid or not 
+
+# Accessing json data  
+- Accessing Data From Json
+#### JSON.parse( data )   method -----> To parse a String data into a JS Object 
+#### JSON.stringify( json )  method   ----->  To parse a JS Object data into JSON
+
+
+# API Testing request
+- Tools
+- Hoppscoth  ->> no need ton install website
+- postman   --> need to download
+
+
+# Ajax 
+- Asynchronous JavaScript and XML
+- tAjax means we calling API --> this call work Asynchronous ( koi jruri ni jb request gya tbhi answer aa jaye ,, time lgg skta hai )  --> hmare pass response aata hai ( JSON me ) jiske sath hm deal krte hai 
+- Xml me response ni aata , JSON me aata hai
+
+
+# HTTP Verbs 
+- GET --> to take any data ,, to access data 
+- POST --> to send data, to post data 
+- DELETE  --> to delete 
+
+
+# Status Codes
+- 200   --> ok 
+- 404   --> we call wrong api endpoint ( Not Found )
+- 400   --> BAd request 
+- 500   --> internal server bad request 
+- read from mdn
+
+
+# Adding Infrmation in URL
+- in  url/:id
+-         : num
+-         :q
+-       {{id}}    ====> :id --> replace by any valid value
+
+- jo key value pair inside url extra key vlaue pair ---> ye url ke dwara egnore kr deya jata 
+- eg ?name=akit&marks=100  ---> &marks=100  this is extra info so egnore 
+
+
+# HTTP Header
+- header, value 
+- inside Header --> can be send API response format which type we want like accept ?
+- value ---> inside it we can whch type of data we want like html ? raw ? or json data format
+- inside header --> can send Meta Data
