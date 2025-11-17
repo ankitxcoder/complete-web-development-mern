@@ -212,7 +212,7 @@ fetch(url)
     async function getfetch()      //--> async
     {
       let res= await fetch(url);   //--> await to wait to scomplete 
-      let data= await res.json;
+      let data= await res.json;   // parse to json
       console.log(data);
     }
     for error use try catch 
