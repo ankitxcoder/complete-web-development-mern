@@ -13,16 +13,14 @@ async function getImage() {
   try {
     let result = await axios.get(url);
     console.log(result.data.message);
-    return result.data.message;  //Yahi sabse important line
+    return result.data.message; //Yahi sabse important line
   } catch (err) {
     console.log("there no image found", err);
     return "/";
   }
 }
 
-
-
-//chatgpt code  
+//chatgpt code
 // let btn = document.querySelector("button");
 // let url = "https://dog.ceo/api/breeds/image/random";
 
@@ -49,4 +47,3 @@ async function getImage() {
 //     return null;                    // error me null/undefined bhej do
 //   }
 // }
- 
