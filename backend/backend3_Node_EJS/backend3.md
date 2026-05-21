@@ -33,3 +33,6 @@
 - where have to show templets --> <%- include("includes/head.ejs") %>
 <body> --> so on
 
+
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning of API</title>
+    <link rel="stylesheet" href="/global.css">
+</head>
+<body>
+    <h1 id="h1"> welcome man to public index.js</h1>
+    <form method="POST" action="/posts" class="form">
+        <input type="text" name="username" placeholder="Enter your name">
+        <input type="text" name="content" placeholder="Enter some content" >
+        <button type="submit" id="send_button">Send</button>
+    </form>
+    
+    <!-- showing posts data -->
+     <h2>All Posts</h2>
+     <% posts.forEach(post =>{%>
+        <h3><%= post.username%></h3>
+        <h4><%= post.content%></h4>
+        <%
+     })%>
+</body> 
+</html>
