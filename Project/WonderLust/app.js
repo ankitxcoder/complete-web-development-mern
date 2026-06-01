@@ -30,8 +30,13 @@ app.get("/listingsss", async (req, res) => {
   res.render("listings/index.ejs", { allListings });
 });
 
+//Create Route
+app.get("/listings/new", (req, res) => {
+  res.render("listings/new.ejs");
+});
+
 // Read / Show Route
-app.get("/Listings/:id", async (req, res) => {
+app.get("/listings/:id", async (req, res) => {
   //mere paas Id aa gye hai
   let { id } = req.params;
 
@@ -41,6 +46,12 @@ app.get("/Listings/:id", async (req, res) => {
   res.render("listings/show.ejs", { listingsIdData });
 });
 
+// Create Post Route
+app.post("/listings", async (req, res) => {
+  // let {title,description,image,price,country,location}= req.body;
+  let listing = req.body.listing;
+  console.log(listing);
+});
 // app.get("/testList", async (req, res) => {
 //   let sampleListening = new Listing({
 //     title: "My New Villa ",
