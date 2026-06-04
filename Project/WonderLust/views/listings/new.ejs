@@ -9,17 +9,17 @@
 <body>
     <!-- Code to Enter the  all filed data  -->
      <form method="POST" action="/listings">
-       <input name="listing.[title]" placeholder="Enter Title" type="text" />
+       <input name="listing[title]" value="" type="text" />
        <br>
-       <textarea name="listing.[description]" placeholder="Enter Description" type="text"></textarea>
+       <textarea name="listing[description]" placeholder="Enter Description" type="text"></textarea>
        <br>
-       <input name="listing.[image]" placeholder="Enter Image URL here " type="text"/>
+       <input name="listing[image]" placeholder="Enter Image URL here " type="text"/>
        <br>
-       <input name="listing.[price]" placeholder="Enter the Price" type="number"/>
+       <input name="listing[price]" placeholder="Enter the Price" type="number"/>
        <br>
-       <input name="listing.[country]" placeholder="Enter Country Name" type="text" />
+       <input name="listing[country]" placeholder="Enter Country Name" type="text" />
        <br>
-       <input name="listing.[location]" placeholder="Enter you location" type="text" />
+       <input name="listing[location]" placeholder="Enter you location" type="text" />
        <br>
        <button>Add</button>
      </form>
